@@ -1,11 +1,54 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Mid Term Project: Yuvraj Singh Palh, 229677280 -->
 <html lang="en">
-<head>
+<head> <!-- Header -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yuvraj</title>
+    <title>Yuvraj Singh Palh</title> 
+    <link rel="stylesheet" href="css/styles.css"> <!-- CSS Linking -->
 </head>
-<body>
-    
+<body> 
+
+    <header> <!-- header tag has the Nav Bar -->
+        <nav>
+            <div class="nav-left"> <!-- Websites -->
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5">HTML5</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+            </div>
+            <div class="nav-right"> <!-- Theme logic -->
+                <button data-bs-theme-value="dark" onclick="setTheme('dark')">Dark</button>
+                <button data-bs-theme-value="light" onclick="setTheme('light')">Light</button>
+                <button>Contact Me</button>
+            </div>
+        </nav>
+    </header>
+
+    <main> <!-- Grid for the body -->
+        <div class="container">
+            <div class="left-column">
+                <p>Factorial calculator.</p>
+                <p>n! = 1x2x3 ... xn.</p>
+                <p>e.g. 5! = 120.</p>
+            </div>
+            <div class="right-column">
+                <input type="number" id="numberInput" placeholder="Enter a number">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="left-column">
+                <button onclick="calculateFactorial()">Enter</button>
+            </div>
+            <div class="right-column result-box" id="resultBox">
+                <!-- Factorial result will be displayed here -->
+            </div>
+        </div>
+    </main>
+
+    <footer> <!-- Footer -->
+        Simple factorial calculator © 2025
+    </footer>
+
+    <script src="js/script.js"></script> <!-- JS Code linking -->
 </body>
 </html>
